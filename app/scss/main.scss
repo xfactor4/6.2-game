@@ -15,7 +15,29 @@ $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
 body {
-  background-color: $base-background-color;
-  color: $base-font-color;
   font-family: $base-font-family;
+  background-color: black;
+  color: white;
+}
+
+.app-container {
+  @include outer-container;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.select .selected {
+  background-color: gray;
+  height: 240px;
+  width: 240px;
+}
+
+.select li {
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+
+  img {
+    max-width: 100%;
+  }
 }

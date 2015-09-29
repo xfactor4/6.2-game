@@ -1,0 +1,13 @@
+<div class="hero">
+  <img src="images/characters/{{hero.name}}.png">
+  <progress max="100" value="{{hero.health}}"></progress>
+</div>
+
+<div class="villain">
+  <img src="images/characters/{{villain.name}}.png">
+  <progress max="100" value="{{villain.health}}"></progress>
+</div>
+
+{{#unless isFighting}}
+  <button data-behavior="fight">Fight</button>
+{{/unless}}

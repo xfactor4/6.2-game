@@ -1,0 +1,23 @@
+<div class="hero">
+  <img class="hero-image" src="{{heroImage}}" alt="">
+  <ul class="heroes">
+    {{#each heroes}}
+      <li data-char-name="{{name}}">
+        <img src="images/characters/{{name}}.png">
+      </li>
+    {{/each}}
+  </ul>
+</div>
+
+<a data-behavior="transition-play">Fight</a>
+
+<div class="villain">
+  <img class="villain-image" src="{{villainImage}}" alt="">
+  <ul class="villains">
+    {{#each villains}}
+      <li data-char-name="{{name}}">
+        <img src="images/characters/{{name}}.png">
+      </li>
+    {{/each}}
+  </ul>
+</div>
